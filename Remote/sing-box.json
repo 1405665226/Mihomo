@@ -53,7 +53,7 @@
         "server": "local"
       },
       {
-        "rule_set": "geosite-!cn",
+        "rule_set": "geosite-geolocation-!cn",
         "server": "remote"
       },
       {
@@ -177,7 +177,7 @@
         "outbound": "REJECT"
       },
       {
-        "rule_set": "geosite-!cn",
+        "rule_set": "geosite-geolocation-!cn",
         "outbound": "🚀 节点选择"
       },
       {
@@ -204,7 +204,7 @@
         "download_detour": "DIRECT"
       },
       {
-        "tag": "geosite-!cn",
+        "tag": "geosite-geolocation-!cn",
         "type": "remote",
         "format": "binary",
         "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs",
