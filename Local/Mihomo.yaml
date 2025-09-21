@@ -96,7 +96,7 @@ dns:
     "rule-set:geosite-cn":
       - "https://dns.alidns.com/dns-query"
       - "https://doh.pub/dns-query"
-    "rule-set:geosite-!cn":
+    "rule-set:geosite-geolocation-!cn":
       - "https://dns.google/dns-query"
       - "https://cloudflare-dns.com/dns-query"
     "rule-set:geosite-category-ads-all": rcode://success
@@ -156,7 +156,7 @@ rules:
   - RULE-SET,geosite-category-ads-all,REJECT
   - RULE-SET,geosite-cn,DIRECT
   - RULE-SET,geoip-cn,DIRECT
-  - RULE-SET,geosite-!cn,🚀 节点选择
+  - RULE-SET,geosite-geolocation-!cn,🚀 节点选择
   - MATCH,🚀 节点选择
 
 rule-providers:
@@ -172,7 +172,7 @@ rule-providers:
     interval: 86400
     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"
     format: mrs
-  geosite-!cn:
+  geosite-geolocation-!cn:
     type: http
     behavior: domain
     interval: 86400
