@@ -96,7 +96,6 @@
       "outbounds": [
         "⚡ 自动选择",
         "DIRECT",
-        "REJECT",
         "{all}"
       ]
     },
