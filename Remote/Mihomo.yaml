@@ -110,7 +110,7 @@ proxy-groups:
       name: 🚀 节点选择,
       type: select,
       proxies: [⚡ 自动选择, DIRECT],
-      # include-all: true,
+      include-all: true,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       lazy: true,
