@@ -125,7 +125,6 @@ proxy-groups:
       max-failed-times: 5,
       timeout: 2000,
       expected-status: 204,
-      hidden: true,
       exclude-filter: "(?i)(剩余|流量|到期|过期|订阅|官网|telegram|电报)"
     }
   - {
