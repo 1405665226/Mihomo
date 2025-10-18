@@ -117,14 +117,9 @@ proxy-groups:
       name: ⚡ 自动选择,
       type: url-test,
       include-all: true,
-      exclude-type: direct,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      lazy: true,
-      max-failed-times: 5,
-      timeout: 2000,
-      expected-status: 204,
       exclude-filter: "(?i)(剩余|流量|到期|过期|订阅|官网|telegram|电报)"
     }
   - {
@@ -137,84 +132,54 @@ proxy-groups:
       name: 🇭🇰 香港,
       type: url-test,
       include-all: true,
-      exclude-type: direct,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      lazy: true,
-      max-failed-times: 5,
-      timeout: 2000,
-      expected-status: 204,
       filter: "(?i)港"
     }
   - {
       name: 🇺🇸 美国,
       type: url-test,
       include-all: true,
-      exclude-type: direct,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      lazy: true,
-      max-failed-times: 5,
-      timeout: 2000,
-      expected-status: 204,
       filter: "(?i)美"
     }
   - {
       name: 🇯🇵 日本,
       type: url-test,
       include-all: true,
-      exclude-type: direct,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      lazy: true,
-      max-failed-times: 5,
-      timeout: 2000,
-      expected-status: 204,
       filter: "(?i)日"
     }
   - {
       name: 🇰🇷 韩国,
       type: url-test,
       include-all: true,
-      exclude-type: direct,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      lazy: true,
-      max-failed-times: 5,
-      timeout: 2000,
-      expected-status: 204,
       filter: "(?i)韩"
     }
   - {
       name: 🇸🇬 新加坡,
       type: url-test,
       include-all: true,
-      exclude-type: direct,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      lazy: true,
-      max-failed-times: 5,
-      timeout: 2000,
-      expected-status: 204,
       filter: "(?i)新"
     }
   - {
       name: 🇹🇼 台湾,
       type: url-test,
       include-all: true,
-      exclude-type: direct,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      lazy: true,
-      max-failed-times: 5,
-      timeout: 2000,
-      expected-status: 204,
       filter: "(?i)台"
     }
 
