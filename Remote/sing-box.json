@@ -135,9 +135,7 @@
     {
       "tag": "⚡ 自动选择",
       "type": "urltest",
-      "outbounds": [
-        "{all}"
-      ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
       "tolerance": 50,
@@ -148,9 +146,7 @@
     {
       "tag": "👆🏻 手动选择",
       "type": "selector",
-      "outbounds": [
-        "{all}"
-      ],
+      "outbounds": [],
       "filter":[
         {"action": "exclude", "keywords": ["剩余|流量|到期|过期|订阅|官网|telegram|电报"]}
       ]
@@ -158,9 +154,7 @@
     {
       "tag": "🇭🇰 香港",
       "type": "urltest",
-      "outbounds": [
-        "{all}"
-      ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
       "tolerance": 50,
@@ -171,9 +165,7 @@
     {
       "tag": "🇺🇸 美国",
       "type": "urltest",
-      "outbounds": [
-        "{all}"
-      ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
       "tolerance": 50,
@@ -184,9 +176,7 @@
     {
       "tag": "🇯🇵 日本",
       "type": "urltest",
-      "outbounds": [
-        "{all}"
-      ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
       "tolerance": 50,
@@ -197,9 +187,7 @@
     {
       "tag": "🇰🇷 韩国",
       "type": "urltest",
-      "outbounds": [
-        "{all}"
-      ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
       "tolerance": 50,
@@ -210,9 +198,7 @@
     {
       "tag": "🇸🇬 新加坡",
       "type": "urltest",
-      "outbounds": [
-        "{all}"
-      ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
       "tolerance": 50,
@@ -223,9 +209,7 @@
     {
       "tag": "🇹🇼 台湾",
       "type": "urltest",
-      "outbounds": [
-        "{all}"
-      ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
       "tolerance": 50,
