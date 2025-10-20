@@ -130,9 +130,6 @@
         "🇸🇬 新加坡",
         "🇹🇼 台湾",
         "DIRECT"
-      ],
-      "filter": [
-        {"action": "exclude", "keywords": ["剩余|流量|到期|过期|订阅|官网|telegram|电报"]}
       ]
     },
     {
