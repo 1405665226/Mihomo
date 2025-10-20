@@ -110,8 +110,7 @@ proxy-groups:
       name: 🚀 节点选择,
       type: select,
       proxies: [⚡ 自动选择, 👆🏻 手动选择, 🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇹🇼 台湾, DIRECT],
-      ## include-all: true,
-      exclude-filter: "(?i)(剩余|流量|到期|过期|订阅|官网|telegram|电报)"
+      ## include-all: true
     }
   - {
       name: ⚡ 自动选择,
@@ -119,8 +118,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      include-all: true,
-      exclude-filter: "(?i)(剩余|流量|到期|过期|订阅|官网|telegram|电报)"
+      include-all: true
     }
   - {
       name: 👆🏻 手动选择,
