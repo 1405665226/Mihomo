@@ -133,13 +133,19 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
-      "tolerance": 50
+      "tolerance": 50,
+      "filter": [
+        {"action": "exclude", "keywords": ["剩余|流量|到期|过期|订阅|官网|telegram|电报"]}
+      ]
     },
     {
       "tag": "👆🏻 手动选择",
       "type": "selector",
       "outbounds": [
         "{all}"
+      ],
+      "filter":[
+        {"action": "exclude", "keywords": ["剩余|流量|到期|过期|订阅|官网|telegram|电报"]}
       ]
     },
     {
