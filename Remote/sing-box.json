@@ -23,11 +23,18 @@
       {
         "tag": "Proxy DNS",
         "type": "https",
-        "server": "8.8.8.8",
+        "server": "https://dns.google/dns-query",
+        "domain_resolver": "dns_resolver",
         "detour": "🚀 节点选择"
       },
       {
         "tag": "Direct DNS",
+        "type": "https",
+        "server": "https://dns.alidns.com/dns-query",
+        "domain_resolver": "dns_resolver"
+      },
+      {
+        "tag": "dns_resolver",
         "type": "https",
         "server": "223.5.5.5"
       },
