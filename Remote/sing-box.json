@@ -128,7 +128,7 @@
         "🇯🇵 日本",
         "🇰🇷 韩国",
         "🇸🇬 新加坡",
-        "🇹🇼 台湾",
+        "🇨🇳 台湾",
         "DIRECT"
       ]
     },
@@ -138,18 +138,12 @@
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
-      "tolerance": 50,
-      "filter": [
-        {"action": "exclude", "keywords": ["剩余|流量|到期|过期|订阅|官网|telegram|电报"]}
-      ]
+      "tolerance": 50
     },
     {
       "tag": "👆🏻 手动选择",
       "type": "selector",
-      "outbounds": [],
-      "filter": [
-        {"action": "exclude", "keywords": ["剩余|流量|到期|过期|订阅|官网|telegram|电报"]}
-      ]
+      "outbounds": []
     },
     {
       "tag": "🇭🇰 香港",
@@ -159,7 +153,7 @@
       "interval": "300s",
       "tolerance": 50,
       "filter": [
-        {"action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"]}
+        {"action": "include", "keywords": ["港"]}
       ]
     },
     {
@@ -170,7 +164,7 @@
       "interval": "300s",
       "tolerance": 50,
       "filter": [
-        {"action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"]}
+        {"action": "include", "keywords": ["美"]}
       ]
     },
     {
@@ -181,7 +175,7 @@
       "interval": "300s",
       "tolerance": 50,
       "filter": [
-        {"action": "include", "keywords": ["🇯🇵|JP|jp|日本|日|Japan"]}
+        {"action": "include", "keywords": ["日"]}
       ]
     },
     {
@@ -192,7 +186,7 @@
       "interval": "300s",
       "tolerance": 50,
       "filter": [
-        {"action": "include", "keywords": ["🇰🇷|KR|kr|韩国|韩|Korea"]}
+        {"action": "include", "keywords": ["韩"]}
       ]
     },
     {
@@ -203,18 +197,18 @@
       "interval": "300s",
       "tolerance": 50,
       "filter": [
-        {"action": "include", "keywords": ["🇸🇬|SG|sg|新加坡|狮|Singapore"]}
+        {"action": "include", "keywords": ["新"]}
       ]
     },
     {
-      "tag": "🇹🇼 台湾",
+      "tag": "🇨🇳 台湾",
       "type": "urltest",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
       "tolerance": 50,
       "filter": [
-        {"action": "include", "keywords": ["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]}
+        {"action": "include", "keywords": ["台"]}
       ]
     },
     {
