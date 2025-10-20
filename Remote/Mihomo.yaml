@@ -109,8 +109,7 @@ proxy-groups:
   - {
       name: 🚀 节点选择,
       type: select,
-      proxies: [⚡ 自动选择, 👆🏻 手动选择, 🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇹🇼 台湾, DIRECT],
-      ## include-all: true
+      proxies: [⚡ 自动选择, 👆🏻 手动选择, 🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇹🇼 台湾, DIRECT]
     }
   - {
       name: ⚡ 自动选择,
@@ -123,8 +122,7 @@ proxy-groups:
   - {
       name: 👆🏻 手动选择,
       type: select,
-      include-all: true,
-      exclude-filter: "(?i)(剩余|流量|到期|过期|订阅|官网|telegram|电报)"
+      include-all: true
     }
   - {
       name: 🇭🇰 香港,
@@ -187,7 +185,6 @@ rules:
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
   - IP-CIDR,172.16.0.0/12,DIRECT
-  - DOMAIN,app.mitce.net,DIRECT
   - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
   - RULE-SET,geosite-category-ads-all,REJECT
   - RULE-SET,geosite-cn,DIRECT
