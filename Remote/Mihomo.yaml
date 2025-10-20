@@ -131,7 +131,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "(?i)港"
+      filter: "港"
     }
   - {
       name: 🇺🇸 美国,
@@ -140,7 +140,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "(?i)美"
+      filter: "美"
     }
   - {
       name: 🇯🇵 日本,
@@ -149,7 +149,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "(?i)日"
+      filter: "日"
     }
   - {
       name: 🇰🇷 韩国,
@@ -158,7 +158,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "(?i)韩"
+      filter: "韩"
     }
   - {
       name: 🇸🇬 新加坡,
@@ -167,7 +167,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "(?i)新"
+      filter: "新"
     }
   - {
       name: 🇨🇳 台湾,
@@ -176,7 +176,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "(?i)台"
+      filter: "台"
     }
 
 rules:
