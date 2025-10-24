@@ -109,16 +109,15 @@ proxy-groups:
   - {
       name: 🚀 节点选择,
       type: select,
-      proxies: [⚡ 自动选择, 👆🏻 手动选择, 🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇳 台湾, DIRECT]
+      proxies: [⚡ 自动选择, 👆🏻 手动选择, DIRECT]
     }
   - {
       name: ⚡ 自动选择,
       type: url-test,
+      proxies: [🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇳 台湾],
       url: https://www.gstatic.com/generate_204,
       interval: 300,
-      tolerance: 50,
-      include-all: true,
-      hidden: true
+      tolerance: 50
     }
   - {
       name: 👆🏻 手动选择,
@@ -132,8 +131,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "港",
-      hidden: true
+      filter: "港"
     }
   - {
       name: 🇺🇸 美国,
@@ -142,8 +140,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "美",
-      hidden: true
+      filter: "美"
     }
   - {
       name: 🇯🇵 日本,
@@ -152,8 +149,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "日",
-      hidden: true
+      filter: "日"
     }
   - {
       name: 🇰🇷 韩国,
@@ -162,8 +158,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "韩",
-      hidden: true
+      filter: "韩"
     }
   - {
       name: 🇸🇬 新加坡,
@@ -172,8 +167,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "新",
-      hidden: true
+      filter: "新"
     }
   - {
       name: 🇨🇳 台湾,
@@ -182,8 +176,7 @@ proxy-groups:
       interval: 300,
       tolerance: 50,
       include-all: true,
-      filter: "台",
-      hidden: true
+      filter: "台"
     }
 
 rules:
