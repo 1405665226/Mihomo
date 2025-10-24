@@ -23,20 +23,13 @@
       {
         "tag": "Proxy DNS",
         "type": "https",
-        "server": "https://8.8.8.8/dns-query",
-        "domain_resolver": "dns_resolver",
+        "server": "8.8.8.8",
         "detour": "🚀 节点选择"
       },
       {
         "tag": "Direct DNS",
         "type": "https",
-        "server": "https://223.5.5.5/dns-query",
-        "domain_resolver": "dns_resolver"
-      },
-      {
-        "tag": "dns_resolver",
-        "type": "https",
-        "server": "223.5.5.5"
+        "server": "https://223.5.5.5/dns-query"
       },
       {
         "tag": "fakeip",
