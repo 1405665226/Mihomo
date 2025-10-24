@@ -151,10 +151,7 @@
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
-      "tolerance": 50,
-      "filter": [
-        {"action": "include", "keywords": ["港"]}
-      ]
+      "tolerance": 50
     },
     {
       "tag": "🇺🇸 美国",
@@ -162,10 +159,7 @@
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
-      "tolerance": 50,
-      "filter": [
-        {"action": "include", "keywords": ["美"]}
-      ]
+      "tolerance": 50
     },
     {
       "tag": "🇯🇵 日本",
@@ -173,10 +167,7 @@
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
-      "tolerance": 50,
-      "filter": [
-        {"action": "include", "keywords": ["日"]}
-      ]
+      "tolerance": 50
     },
     {
       "tag": "🇰🇷 韩国",
@@ -184,10 +175,7 @@
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
-      "tolerance": 50,
-      "filter": [
-        {"action": "include", "keywords": ["韩"]}
-      ]
+      "tolerance": 50
     },
     {
       "tag": "🇸🇬 新加坡",
@@ -195,10 +183,7 @@
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
-      "tolerance": 50,
-      "filter": [
-        {"action": "include", "keywords": ["新"]}
-      ]
+      "tolerance": 50
     },
     {
       "tag": "🇨🇳 台湾",
@@ -206,10 +191,7 @@
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
-      "tolerance": 50,
-      "filter": [
-        {"action": "include", "keywords": ["台"]}
-      ]
+      "tolerance": 50
     },
     {
       "tag": "DIRECT",
