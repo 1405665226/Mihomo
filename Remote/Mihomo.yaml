@@ -130,6 +130,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
+      hidden: true,
       include-all: true,
       filter: "港"
     }
@@ -139,6 +140,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
+      hidden: true,
       include-all: true,
       filter: "美"
     }
@@ -148,6 +150,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
+      hidden: true,
       include-all: true,
       filter: "日"
     }
@@ -157,6 +160,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
+      hidden: true,
       include-all: true,
       filter: "韩"
     }
@@ -166,6 +170,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
+      hidden: true,
       include-all: true,
       filter: "新"
     }
@@ -175,6 +180,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
+      hidden: true,
       include-all: true,
       filter: "台"
     }
