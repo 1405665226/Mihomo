@@ -127,9 +127,8 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      hidden: true,
       include-all: true,
-      filter: "港"
+      filter: "香港"
     }
   - {
       name: 🇺🇸 美国,
@@ -137,9 +136,8 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      hidden: true,
       include-all: true,
-      filter: "美"
+      filter: "美国"
     }
   - {
       name: 🇯🇵 日本,
@@ -147,9 +145,8 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      hidden: true,
       include-all: true,
-      filter: "日"
+      filter: "日本"
     }
   - {
       name: 🇰🇷 韩国,
@@ -157,9 +154,8 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      hidden: true,
       include-all: true,
-      filter: "韩"
+      filter: "韩国"
     }
   - {
       name: 🇸🇬 新加坡,
@@ -167,9 +163,8 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      hidden: true,
       include-all: true,
-      filter: "新"
+      filter: "新加坡"
     }
   - {
       name: 🇨🇳 台湾,
@@ -177,9 +172,8 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
-      hidden: true,
       include-all: true,
-      filter: "台"
+      filter: "台湾"
     }
 
 rules:
