@@ -109,12 +109,12 @@ proxy-groups:
   - {
       name: 🚀 节点选择,
       type: select,
-      proxies: [⚡ 自动选择, 👆🏻 手动选择, ♻️ 自动回退, ⚖️ 负载均衡, DIRECT]
+      proxies: [🎯 自动选择, 👆🏻 手动选择, ♻️ 自动回退, ⚖️ 负载均衡, DIRECT]
     }
   - {
-      name: ⚡ 自动选择,
+      name: 🎯 自动选择,
       type: select,
-      proxies: [🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇳 台湾]
+      proxies: [🌏 全部节点, 🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇳 台湾]
     }
   - {
       name: 👆🏻 手动选择,
@@ -133,6 +133,14 @@ proxy-groups:
       type: load-balance,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
+      include-all: true
+    }
+  - {
+      name: 🌏 全部节点,
+      type: url-test,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      tolerance: 50,
       include-all: true
     }
   - {
