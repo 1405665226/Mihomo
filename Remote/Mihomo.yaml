@@ -109,7 +109,7 @@ proxy-groups:
   - {
       name: 🚀 节点选择,
       type: select,
-      proxies: [🎯 自动选择, 👆🏻 手动选择, ♻️ 自动回退, ⚖️ 负载均衡, DIRECT]
+      proxies: [🎯 自动选择, 👆🏻 手动选择, DIRECT]
     }
   - {
       name: 🎯 自动选择,
@@ -119,20 +119,6 @@ proxy-groups:
   - {
       name: 👆🏻 手动选择,
       type: select,
-      include-all: true
-    }
-  - {
-      name: ♻️ 自动回退,
-      type: fallback,
-      url: https://www.gstatic.com/generate_204,
-      interval: 300,
-      include-all: true
-    }
-  - {
-      name: ⚖️ 负载均衡,
-      type: load-balance,
-      url: https://www.gstatic.com/generate_204,
-      interval: 300,
       include-all: true
     }
   - {
