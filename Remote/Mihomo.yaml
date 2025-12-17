@@ -79,19 +79,6 @@ dns:
       - "https://dns.google/dns-query"
       - "https://cloudflare-dns.com/dns-query"
     "rule-set:geosite-category-ads-all": rcode://success
-hosts:
-  cloudflare-dns.com:
-    - 1.1.1.1
-    - 1.0.0.1
-  dns.alidns.com:
-    - 223.5.5.5
-    - 223.6.6.6
-  dns.google:
-    - 8.8.8.8
-    - 8.8.4.4
-  doh.pub:
-    - 119.29.29.29
-    - 119.28.28.28
 
 proxy-groups:
   - {
