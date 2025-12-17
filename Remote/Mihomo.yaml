@@ -44,21 +44,13 @@ tun:
 
 dns:
   enable: true
-  listen: :53
   ipv6: false
-  use-hosts: true
-  respect-rules: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - "*.lan"
-    - "*.local"
-    - "localhost"
-    - "10.0.0.0/8"
-    - "192.168.0.0/16"
-    - "172.16.0.0/12"
-    - "127.0.0.0/8"
+    - "+.lan"
+    - "+.local"
   default-nameserver:
     - "223.5.5.5"
     - "119.29.29.29"
@@ -78,10 +70,6 @@ dns:
       - gfw
     ipcidr:
       - 240.0.0.0/4
-    domain:
-      - '+.google.com'
-      - '+.facebook.com'
-      - '+.youtube.com'
   nameserver-policy:
     "rule-set:geosite-cn":
       - "https://dns.alidns.com/dns-query"
@@ -90,20 +78,6 @@ dns:
       - "https://dns.google/dns-query"
       - "https://cloudflare-dns.com/dns-query"
     "rule-set:geosite-category-ads-all": rcode://success
-
-hosts:
-  cloudflare-dns.com:
-    - 1.1.1.1
-    - 1.0.0.1
-  dns.alidns.com:
-    - 223.5.5.5
-    - 223.6.6.6
-  dns.google:
-    - 8.8.8.8
-    - 8.8.4.4
-  doh.pub:
-    - 119.29.29.29
-    - 119.28.28.28
 
 proxy-groups:
   - {
