@@ -78,7 +78,7 @@ dns:
       - "https://doh.pub/dns-query"
     "rule-set:geosite-geolocation-!cn":
       - "https://dns.google/dns-query"
-      - "https://cloudflare-dns.com/dns-query"
+      - "https://dns.cloudflare.com/dns-query"
     "rule-set:geosite-category-ads-all": rcode://success
 
 proxy-groups:
