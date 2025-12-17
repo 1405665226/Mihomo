@@ -44,6 +44,7 @@ tun:
 
 dns:
   enable: true
+  listen: :53
   ipv6: false
   use-hosts: true
   respect-rules: true
