@@ -45,6 +45,7 @@ tun:
 dns:
   enable: true
   ipv6: false
+  listen: :53
   use-hosts: true
   respect-rules: true
   enhanced-mode: fake-ip
