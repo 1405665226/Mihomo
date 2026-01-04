@@ -176,6 +176,7 @@ rules:
   - PROCESS-NAME,XYServiceLink.exe,DIRECT
   - DOMAIN-SUFFIX,doppiocdn.net,DIRECT
   - DOMAIN-SUFFIX,live-video.net,DIRECT
+  - DOMAIN-SUFFIX,phncdn.com,DIRECT
   - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
   - RULE-SET,geosite-category-ads-all,REJECT
   - RULE-SET,geosite-cn,DIRECT
