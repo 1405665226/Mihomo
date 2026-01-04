@@ -174,10 +174,10 @@ rules:
   - PROCESS-NAME,XYProtectService.exe,DIRECT
   - PROCESS-NAME,XYRepair.exe,DIRECT
   - PROCESS-NAME,XYServiceLink.exe,DIRECT
-  - DOMAIN-SUFFIX,doppiocdn.net,DIRECT
-  - DOMAIN-SUFFIX,live-video.net,DIRECT
-  - DOMAIN-SUFFIX,phncdn.com,DIRECT
-  - DOMAIN-SUFFIX,pandalive.co.kr,🇺🇸 美国
+  - DOMAIN-KEYWORD,doppiocdn,DIRECT
+  - DOMAIN-KEYWORD,live-video,DIRECT
+  - DOMAIN-KEYWORD,phncdn,DIRECT
+  - DOMAIN-KEYWORD,kr,🇺🇸 美国
   - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
   - RULE-SET,geosite-category-ads-all,REJECT
   - RULE-SET,geosite-cn,DIRECT
