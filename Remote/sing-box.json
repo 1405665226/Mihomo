@@ -255,7 +255,16 @@
         "action": "reject"
       },
       {
-        "rule_set": ["geosite-cn", "geoip-cn"],
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "rule_set": "geosite-cn"
+          },
+          {
+            "rule_set": "geoip-cn"
+          }
+        ],
         "outbound": "DIRECT"
       },
       {
