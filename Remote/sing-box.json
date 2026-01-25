@@ -58,9 +58,18 @@
         "server": "Google"
       },
       {
-        "rule_set": "geosite-cn",
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "rule_set": "geosite-cn"
+          },
+          {
+            "rule_set": "geoip-cn"
+          }
+        ],
         "server": "Ali"
-      },
+      }，
       {
         "query_type": [
           "A",
@@ -250,9 +259,18 @@
         "action": "reject"
       },
       {
-        "rule_set": "geosite-cn",
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "rule_set": "geosite-cn"
+          },
+          {
+            "rule_set": "geoip-cn"
+          }
+        ],
         "outbound": "DIRECT"
-      },
+      }，
       {
         "rule_set": "geosite-geolocation-!cn",
         "outbound": "🚀 节点选择"
