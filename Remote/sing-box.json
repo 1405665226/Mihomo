@@ -33,8 +33,7 @@
         "type": "https",
         "server": "dns.alidns.com",
         "path": "/dns-query",
-        "domain_resolver": "bootstrap",
-        "detour": "DIRECT"
+        "domain_resolver": "bootstrap"
       },
       {
         "tag": "bootstrap",
