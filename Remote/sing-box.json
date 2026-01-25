@@ -9,7 +9,7 @@
       "external_ui": "ui",
       "secret": "",
       "external_ui_download_url": "https://ghfast.top/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
-      "external_ui_download_detour": "🇯🇵 日本 01",
+      "external_ui_download_detour": "DIRECT",
       "default_mode": "rule"
     },
     "cache_file": {
@@ -277,28 +277,28 @@
         "type": "remote",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
-        "download_detour": "🇯🇵 日本 01"
+        "download_detour": "DIRECT"
       },
       {
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
-        "download_detour": "🇯🇵 日本 01"
+        "download_detour": "DIRECT"
       },
       {
         "tag": "geosite-geolocation-!cn",
         "type": "remote",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs",
-        "download_detour": "🇯🇵 日本 01"
+        "download_detour": "DIRECT"
       },
       {
         "tag": "geosite-category-ads-all",
         "type": "remote",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs",
-        "download_detour": "🇯🇵 日本 01"
+        "download_detour": "DIRECT"
       }
     ]
   }
