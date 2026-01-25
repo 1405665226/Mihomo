@@ -36,7 +36,7 @@ tun:
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
-  mtu: 9000
+  mtu: 1500
   strict-route: true
   auto-route: true
   auto-redirect: true
