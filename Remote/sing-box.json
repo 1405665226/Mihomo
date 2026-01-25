@@ -25,7 +25,8 @@
         "type": "https",
         "server": "dns.google",
         "path": "/dns-query",
-        "domain_resolver": "bootstrap"
+        "domain_resolver": "bootstrap",
+        "detour": "🚀 节点选择"
       },
       {
         "tag": "Ali",
@@ -81,6 +82,7 @@
         "server": "Google"
       }
     ],
+    "final": "Google",
     "independent_cache": true,
     "strategy": "prefer_ipv4"
   },
@@ -194,6 +196,9 @@
     }
   ],
   "route": {
+    "default_domain_resolver": {
+      "server": "Ali"
+    },
     "auto_detect_interface": true,
     "final": "🚀 节点选择",
     "rules": [
