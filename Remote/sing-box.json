@@ -34,7 +34,7 @@
         "server": "dns.alidns.com",
         "path": "/dns-query",
         "domain_resolver": "bootstrap",
-        "detour": "Direct"
+        "detour": "DIRECT"
       },
       {
         "tag": "bootstrap",
