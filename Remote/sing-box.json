@@ -79,24 +79,19 @@
   },
   "inbounds": [
     {
+      "tag": "tun",
       "type": "tun",
       "stack": "mixed",
-      "mtu": 9000,
+      "mtu": 1500,
       "auto_route": true,
       "strict_route": true,
       "address": [
         "172.19.0.0/30",
         "fdfe:dcba:9876::0/126"
-      ],
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "127.0.0.1",
-          "server_port": 7890
-        }
-      }
+      ]
     },
     {
+      "tag": "mixed",
       "type": "mixed",
       "listen": "127.0.0.1",
       "listen_port": 7890
@@ -228,11 +223,24 @@
         "outbound": "DIRECT"
       },
       {
-        "domain": [
+        "domain_suffix": [
           "clash.razord.top",
           "yacd.metacubex.one",
           "yacd.haishan.me",
-          "d.metacubex.one"
+          "d.metacubex.one",
+          "localhost"
+        ],
+        "outbound": "DIRECT"
+      },
+      {
+        "domain_suffix": [
+          "googleapis.cn"
+        ],
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "ip_cidr": [
+          "127.0.0.0/8"
         ],
         "outbound": "DIRECT"
       },
