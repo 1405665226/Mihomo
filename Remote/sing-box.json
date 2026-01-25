@@ -69,7 +69,7 @@
           }
         ],
         "server": "Ali"
-      }，
+      },
       {
         "query_type": [
           "A",
@@ -270,7 +270,7 @@
           }
         ],
         "outbound": "DIRECT"
-      }，
+      },
       {
         "rule_set": "geosite-geolocation-!cn",
         "outbound": "🚀 节点选择"
