@@ -28,7 +28,7 @@
       {
         "tag": "Ali",
         "type": "udp",
-        "server":223.5.5.5"
+        "server": "223.5.5.5"
       },
       {
         "tag": "fakeip",
