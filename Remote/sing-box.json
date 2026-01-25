@@ -255,7 +255,7 @@
         "action": "reject"
       },
       {
-        "rule_set": ["geosite-cn", "geoip-cn"]
+        "rule_set": ["geosite-cn", "geoip-cn"],
         "outbound": "DIRECT"
       },
       {
