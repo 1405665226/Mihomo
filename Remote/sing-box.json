@@ -58,16 +58,16 @@
         "server": "Google"
       },
       {
+        "rule_set": "geosite-cn",
+        "server": "Ali"
+      },
+      {
         "query_type": [
           "A",
           "AAAA"
         ],
         "rule_set": "geosite-geolocation-!cn",
         "server": "fakeip"
-      },
-      {
-        "rule_set": "geosite-cn",
-        "server": "Ali"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
@@ -193,7 +193,8 @@
       {
         "protocol": [
           "http",
-          "tls"
+          "tls",
+          "quic"
         ],
         "action": "sniff"
       },
