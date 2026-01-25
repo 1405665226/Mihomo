@@ -234,10 +234,6 @@
       },
       {
         "domain_suffix": [
-          "clash.razord.top",
-          "yacd.metacubex.one",
-          "yacd.haishan.me",
-          "d.metacubex.one",
           "localhost"
         ],
         "outbound": "DIRECT"
