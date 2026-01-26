@@ -232,7 +232,11 @@
         "outbound": "🚀 节点选择"
       },
       {
-        "ip_is_private": true,
+        "ip_cidr": [
+        "192.168.0.0/16",
+        "10.0.0.0/8",
+        "172.16.0.0/12"
+        ],
         "outbound": "DIRECT"
       },
       {
@@ -246,12 +250,6 @@
           "googleapis.cn"
         ],
         "outbound": "🚀 节点选择"
-      },
-      {
-        "ip_cidr": [
-          "127.0.0.0/8"
-        ],
-        "outbound": "DIRECT"
       },
       {
         "rule_set": "geosite-category-ads-all",
