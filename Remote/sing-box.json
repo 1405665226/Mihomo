@@ -209,10 +209,9 @@
     "final": "🚀 节点选择",
     "rules": [
       {
-        "protocol": [
-          "http",
-          "tls",
-          "quic"
+        "inbound": [
+          "tun",
+          "mixed"
         ],
         "action": "sniff"
       },
