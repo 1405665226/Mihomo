@@ -104,12 +104,17 @@ proxy-groups:
   - {
       name: 🚀 节点选择,
       type: select,
-      proxies: [🎯 自动选择, 👆🏻 手动选择, DIRECT]
+      proxies: [🎯 自动选择, ⚖️ 负载均衡, 👆🏻 手动选择, DIRECT]
     }
   - {
       name: 🎯 自动选择,
       type: select,
-      proxies: [🌏 全部节点, 🇭🇰 香港, 🇺🇸 美国, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇳 台湾]
+      proxies: [🌏 全部节点 🎯, 🇭🇰 香港 🎯, 🇺🇸 美国 🎯, 🇯🇵 日本 🎯, 🇰🇷 韩国 🎯, 🇸🇬 新加坡 🎯, 🇨🇳 台湾 🎯]
+    }
+  - {
+      name: ⚖️ 负载均衡,
+      type: select,
+      proxies: [🌏 全部节点 ⚖️, 🇭🇰 香港 ⚖️, 🇺🇸 美国 ⚖️, 🇯🇵 日本 ⚖️, 🇰🇷 韩国 ⚖️, 🇸🇬 新加坡 ⚖️, 🇨🇳 台湾 ⚖️]
     }
   - {
       name: 👆🏻 手动选择,
@@ -117,7 +122,7 @@ proxy-groups:
       include-all: true
     }
   - {
-      name: 🌏 全部节点,
+      name: 🌏 全部节点 🎯,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
@@ -125,7 +130,15 @@ proxy-groups:
       include-all: true
     }
   - {
-      name: 🇭🇰 香港,
+      name: 🌏 全部节点 ⚖️,
+      type: load-balance,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      strategy: consistent-hashing,
+      filter: "全部节点"
+    }
+  - {
+      name: 🇭🇰 香港 🎯,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
@@ -134,7 +147,15 @@ proxy-groups:
       filter: "香港"
     }
   - {
-      name: 🇺🇸 美国,
+      name: 🇭🇰 香港 ⚖️,
+      type: load-balance,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      strategy: consistent-hashing,
+      filter: "香港"
+    }
+  - {
+      name: 🇺🇸 美国 🎯,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
@@ -143,7 +164,15 @@ proxy-groups:
       filter: "美国"
     }
   - {
-      name: 🇯🇵 日本,
+      name: 🇺🇸 美国 ⚖️,
+      type: load-balance,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      strategy: consistent-hashing,
+      filter: "美国"
+    }
+  - {
+      name: 🇯🇵 日本 🎯,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
@@ -152,7 +181,15 @@ proxy-groups:
       filter: "日本"
     }
   - {
-      name: 🇰🇷 韩国,
+      name: 🇯🇵 日本 ⚖️,
+      type: load-balance,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      strategy: consistent-hashing,
+      filter: "日本"
+    }
+  - {
+      name: 🇰🇷 韩国 🎯,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
@@ -161,7 +198,15 @@ proxy-groups:
       filter: "韩国"
     }
   - {
-      name: 🇸🇬 新加坡,
+      name: 🇰🇷 韩国 ⚖️,
+      type: load-balance,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      strategy: consistent-hashing,
+      filter: "韩国"
+    }
+  - {
+      name: 🇸🇬 新加坡 🎯,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
@@ -170,12 +215,28 @@ proxy-groups:
       filter: "新加坡"
     }
   - {
-      name: 🇨🇳 台湾,
+      name: 🇸🇬 新加坡 ⚖️,
+      type: load-balance,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      strategy: consistent-hashing,
+      filter: "新加坡"
+    }
+  - {
+      name: 🇨🇳 台湾 🎯,
       type: url-test,
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       tolerance: 50,
       include-all: true,
+      filter: "台湾"
+    }
+  - {
+      name: 🇨🇳 台湾 ⚖️,
+      type: load-balance,
+      url: https://www.gstatic.com/generate_204,
+      interval: 300,
+      strategy: consistent-hashing,
       filter: "台湾"
     }
 
