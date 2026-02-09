@@ -135,7 +135,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       strategy: consistent-hashing,
-      filter: "全部节点"
+      include-all: true
     }
   - {
       name: 🇭🇰 香港 🎯,
@@ -152,6 +152,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       strategy: consistent-hashing,
+      include-all: true,
       filter: "香港"
     }
   - {
@@ -169,6 +170,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       strategy: consistent-hashing,
+      include-all: true,
       filter: "美国"
     }
   - {
@@ -186,6 +188,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       strategy: consistent-hashing,
+      include-all: true,
       filter: "日本"
     }
   - {
@@ -203,6 +206,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       strategy: consistent-hashing,
+      include-all: true,
       filter: "韩国"
     }
   - {
@@ -220,6 +224,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       strategy: consistent-hashing,
+      include-all: true,
       filter: "新加坡"
     }
   - {
@@ -237,6 +242,7 @@ proxy-groups:
       url: https://www.gstatic.com/generate_204,
       interval: 300,
       strategy: consistent-hashing,
+      include-all: true,
       filter: "台湾"
     }
 
